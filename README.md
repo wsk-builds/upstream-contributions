@@ -1,5 +1,8 @@
 # Upstream Contributions for `openai/openai-agents-js`
 
+Application repository: [openai/openai-agents-js](https://github.com/openai/openai-agents-js)
+Working fork only: [wsk-builds/openai-agents-js](https://github.com/wsk-builds/openai-agents-js)
+
 This repository is a public index of my upstream maintenance work for the OpenAI Agents JavaScript SDK.
 
 ## Scope
