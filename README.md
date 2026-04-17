@@ -1,6 +1,6 @@
 # Upstream Contributions for `openai/openai-agents-js`
 
-This repository is a public evidence index for my upstream maintenance work in [openai/openai-agents-js](https://github.com/openai/openai-agents-js), with direct links back to the source pull requests, comments, and working branches.
+This repository is a public evidence index for my upstream maintenance work in [openai/openai-agents-js](https://github.com/openai/openai-agents-js). The goal is to make maintainer-adjacent work easy to verify from public GitHub threads, not just to list merged PRs.
 
 ## Snapshot
 - Upstream project: [openai/openai-agents-js](https://github.com/openai/openai-agents-js) with `2,685` stars and `681` forks as of April 16, 2026.
@@ -8,6 +8,12 @@ This repository is a public evidence index for my upstream maintenance work in [
 - Public contribution record: [7 merged PRs](https://github.com/openai/openai-agents-js/pulls?q=is%3Apr+author%3Awsk-builds+is%3Amerged) and [6 open PRs](https://github.com/openai/openai-agents-js/pulls?q=is%3Apr+author%3Awsk-builds+is%3Aopen).
 - Current focus modules: [`agents-extensions`](https://github.com/openai/openai-agents-js/pulls?q=is%3Apr+author%3Awsk-builds+label%3Apackage%3Aagents-extensions), [`agents-realtime`](https://github.com/openai/openai-agents-js/pulls?q=is%3Apr+author%3Awsk-builds+label%3Apackage%3Aagents-realtime), [`agents-core`](https://github.com/openai/openai-agents-js/pulls?q=is%3Apr+author%3Awsk-builds+label%3Apackage%3Aagents-core), and maintenance workflow fixes.
 - Working fork: [wsk-builds/openai-agents-js](https://github.com/wsk-builds/openai-agents-js).
+
+## Maintainer-signal logs
+- [Triage and root-cause log](./logs/triage-log.md): public reproductions, scope narrowing, technical follow-up, and validation notes.
+- [Review log](./logs/review-log.md): public PR reviews and review comments left on other contributors' work.
+- [Maintainer interaction log](./logs/maintainer-interactions.md): public maintainer feedback that changed scope, direction, or ownership expectations.
+- [Logging guide](./logs/README.md): rules for what belongs in these logs and how to keep them useful.
 
 ## Evidence links
 - [Merged PR search](https://github.com/openai/openai-agents-js/pulls?q=is%3Apr+author%3Awsk-builds+is%3Amerged)
