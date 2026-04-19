@@ -1,10 +1,21 @@
 # Review Log
 
-This log is reserved for public PR reviews and review comments left on other contributors' pull requests.
+This log tracks public PR reviews, review comments, and review-thread follow-up that can be verified on GitHub.
 
-## Current public state
-- As of April 16, 2026, the public GitHub search for [`reviewed-by:wsk-builds`](https://github.com/openai/openai-agents-js/pulls?q=is%3Apr+reviewed-by%3Awsk-builds) in `openai/openai-agents-js` shows no submitted outbound PR reviews yet.
-- This is currently a visible gap in the maintainer signal. New public reviews should be logged here as soon as they exist.
+## Current public entries
+
+### 2026-04-17 - Review-thread follow-up on `#1178`
+- PR: [#1178](https://github.com/openai/openai-agents-js/pull/1178)
+- Reviews: [review 1](https://github.com/openai/openai-agents-js/pull/1178#pullrequestreview-4129790723), [review 2](https://github.com/openai/openai-agents-js/pull/1178#pullrequestreview-4129790873)
+- Review comments: [comment 1](https://github.com/openai/openai-agents-js/pull/1178#discussion_r3101178078), [comment 2](https://github.com/openai/openai-agents-js/pull/1178#discussion_r3101178272)
+- Area: `packages/agents-core/src/usage.ts`
+- Main feedback: documented why `replaceCurrentRequestSnapshot()` must update request totals and replace the full retry-adjusted `requestUsageEntries` contribution so streaming usage does not under-count requests after retries.
+- Why this is maintainer-relevant: it leaves a public code-review trail tied to the exact accounting invariant under discussion instead of burying the rationale in commits alone.
+- Outcome: PR remains open for more maintainer validation.
+
+## Current boundary
+- No public outbound reviews on other contributors' pull requests are recorded here yet.
+- New outbound reviews should be added here as soon as they exist.
 
 ## What a strong entry looks like
 - Catches a regression, missing test, or compatibility risk before merge.
@@ -14,15 +25,10 @@ This log is reserved for public PR reviews and review comments left on other con
 
 ## Entry template
 
-### YYYY-MM-DD — PR #NNNN short title
+### YYYY-MM-DD - PR #NNNN short title
 - PR:
 - Review link:
 - Area:
 - Main feedback:
 - Why this is maintainer-relevant:
 - Outcome:
-
-## Preferred next entries
-- Reviews in `agents-extensions`, `agents-realtime`, or `agents-core`.
-- Feedback that requests missing tests, narrower scope, or clearer user-facing behavior notes.
-- Review comments on non-trivial runtime or API changes rather than typo-level docs edits.

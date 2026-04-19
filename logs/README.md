@@ -1,10 +1,10 @@
 # Maintainer Signal Logging Guide
 
-This directory tracks public evidence that looks more like maintenance work than a plain list of merged PRs. The goal is to make it easy for an outside reviewer to verify technical follow-up, public reviews, and interactions with upstream maintainers.
+This directory tracks public evidence that looks more like maintenance work than a plain list of merged PRs. The goal is to make it easy for an outside reviewer to verify technical follow-up, review-thread participation, and interactions with upstream maintainers.
 
 ## What belongs here
 - `triage-log.md`: issue reproduction, root-cause isolation, scope narrowing, validation notes, and public technical follow-up.
-- `review-log.md`: public PR reviews or review comments left on other contributors' pull requests.
+- `review-log.md`: public PR reviews, review comments, and review-thread follow-up that can be verified from GitHub.
 - `maintainer-interactions.md`: public maintainer feedback that changed the shape of the work, closed a thread, requested a narrower fix, or clarified design intent.
 
 ## Entry rules
@@ -19,4 +19,4 @@ This directory tracks public evidence that looks more like maintenance work than
 2. If merged or open PR counts changed, refresh the top-level `README.md` snapshot.
 3. If focus modules changed, refresh the `README.md` focus section.
 4. If there was a maintainer review, closure, or scope correction, update `maintainer-interactions.md`.
-5. If the work was a review on someone else's PR, update `review-log.md`.
+5. If the work created a public review event or review comment, update `review-log.md`.
