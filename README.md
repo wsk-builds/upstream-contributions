@@ -1,70 +1,87 @@
-# Upstream Contributions for `openai/openai-agents-js`
+# OpenAI Agents SDK Upstream Contribution Evidence
 
-This repository is a public evidence page for my upstream maintenance work in [openai/openai-agents-js](https://github.com/openai/openai-agents-js). It is organized around verifiable maintainer signals: merged code, issue-linked follow-up, review-thread participation, and public maintainer feedback.
+This repository is a public evidence archive for my upstream maintenance work in [openai/openai-agents-js](https://github.com/openai/openai-agents-js). It is structured for fast review: the first screen gives the application snapshot, and the rest links each claim to public GitHub evidence.
 
-For a reviewer-oriented application version, see [ONE-SCREEN-SUMMARY.md](./ONE-SCREEN-SUMMARY.md).
+For the shortest reviewer version, see [ONE-SCREEN-SUMMARY.md](./ONE-SCREEN-SUMMARY.md).
 
-## Snapshot
-- Upstream project: [openai/openai-agents-js](https://github.com/openai/openai-agents-js) with `2,741` stars and `688` forks as of April 19, 2026.
-- Public authored upstream PRs in `openai/openai-agents-js`: `15` total, `9` merged, `1` open.
-- Public discussion footprint in the upstream repo: `7` issue/PR comment threads plus `2` submitted review events and `2` review comments visible in the public event feed.
-- Working fork: [wsk-builds/openai-agents-js](https://github.com/wsk-builds/openai-agents-js).
-- Profile README: [wsk-builds/wsk-builds](https://github.com/wsk-builds/wsk-builds).
+## Application Snapshot
 
-## Evidence Map
-- [One-Screen Summary](./ONE-SCREEN-SUMMARY.md): application-style overview optimized for a fast reviewer pass.
-- [Merged PRs](#merged-prs): runtime fixes, test stabilization, docs corrections, and maintainer-workflow patches accepted upstream.
-- [Issue Triage and Technical Follow-up](#issue-triage-and-technical-follow-up): issue-linked fixes, reproduction details, scope narrowing, and public validation notes.
-- [PR Reviews and Review-thread Follow-up](#pr-reviews-and-review-thread-follow-up): current public review participation and direct links to the review threads.
-- [Maintainer Acknowledgements](#maintainer-acknowledgements): approvals, merges, and maintainer feedback that shaped scope or clarified ownership boundaries.
-- Supporting logs: [triage log](./logs/triage-log.md), [review log](./logs/review-log.md), [maintainer interactions](./logs/maintainer-interactions.md), and the [logging guide](./logs/README.md).
+- Focus project: [openai/openai-agents-js](https://github.com/openai/openai-agents-js), with `2,833` stars and `708` forks as of April 25, 2026.
+- Authored upstream PRs: `15` total, `9` merged, `1` active, `5` closed after maintainer feedback or scope changes.
+- Review-thread validation: `5` submitted review events and `5` review comments on [#1178](https://github.com/openai/openai-agents-js/pull/1178).
+- Main contribution areas: runtime compatibility, streaming correctness, test reliability, documentation accuracy, and contributor workflow maintenance.
+- Supporting tooling: [agents-pr-tools](https://github.com/wsk-builds/agents-pr-tools), a zero-dependency GitHub PR reporting CLI with `4` merged PRs.
+- Profile entry point: [wsk-builds/wsk-builds](https://github.com/wsk-builds/wsk-builds).
 
-## Merged PRs
+## High-Signal Evidence
 
-### Runtime and compatibility
-- [#1172](https://github.com/openai/openai-agents-js/pull/1172): `fix(agents-core)` restore discriminated union tool schemas. Narrowed after maintainer review and merged by [`@seratch`](https://github.com/seratch) on April 17, 2026.
-- [#1171](https://github.com/openai/openai-agents-js/pull/1171): `fix(agents-extensions)` preserve nested audio config for the bug reported in [issue #1163](https://github.com/openai/openai-agents-js/issues/1163). Approved and merged by [`@seratch`](https://github.com/seratch) on April 15, 2026.
-- [#1170](https://github.com/openai/openai-agents-js/pull/1170): `fix(agents-realtime)` fail fast on unsupported SIP VAD fields. Approved and merged by [`@seratch`](https://github.com/seratch) on April 15, 2026.
+| Signal | Public evidence | Why it matters |
+| --- | --- | --- |
+| Issue-to-fix flow | [Issue #1163](https://github.com/openai/openai-agents-js/issues/1163) -> merged [PR #1171](https://github.com/openai/openai-agents-js/pull/1171) | Converted a user-reported nested audio config bug into a targeted upstream compatibility fix. |
+| Maintainer-directed scope narrowing | [#1172 review](https://github.com/openai/openai-agents-js/pull/1172#pullrequestreview-4116689455) -> merged [#1172](https://github.com/openai/openai-agents-js/pull/1172) | Reduced a broader compatibility idea into the smallest maintainer-approved fix. |
+| Runtime validation thread | [#1178](https://github.com/openai/openai-agents-js/pull/1178), [runtime probe follow-up](https://github.com/openai/openai-agents-js/pull/1178#issuecomment-4281953544), [live probe instructions](https://github.com/openai/openai-agents-js/pull/1178#issuecomment-4281961306) | Shows review-driven validation around streaming usage, retries, aborts, and real-world probe design. |
+| Contributor tooling reproduction | [#1166 follow-up](https://github.com/openai/openai-agents-js/pull/1166#issuecomment-4245169121) -> merged [#1166](https://github.com/openai/openai-agents-js/pull/1166) | Turned a local pre-commit failure into a reproducible workflow fix without disabling the security scan. |
+| Documentation reliability | [#1158](https://github.com/openai/openai-agents-js/pull/1158), [#1160](https://github.com/openai/openai-agents-js/pull/1160), [#1165](https://github.com/openai/openai-agents-js/pull/1165) | Kept docs, examples, and README paths aligned with actual SDK usage. |
 
-### Test stabilization
-- [#1169](https://github.com/openai/openai-agents-js/pull/1169): `test` stabilize the leak detection harness. Public maintainer comment, approval, and merge by [`@seratch`](https://github.com/seratch) on April 17, 2026.
-- [#1162](https://github.com/openai/openai-agents-js/pull/1162): `test(agents-extensions)` add AI SDK UI boundary coverage. Approved and merged by [`@seratch`](https://github.com/seratch) on April 15, 2026.
+## Merged Upstream PRs
 
-### Docs and maintenance workflow
-- [#1166](https://github.com/openai/openai-agents-js/pull/1166): `fix(husky)` disable trufflehog auto-update in pre-commit. Merged after a public environment-reproduction comment.
-- [#1165](https://github.com/openai/openai-agents-js/pull/1165): `docs(nextjs)` fix the example README source path.
-- [#1160](https://github.com/openai/openai-agents-js/pull/1160): `docs(agents-extensions)` sync AI SDK docs and examples.
-- [#1158](https://github.com/openai/openai-agents-js/pull/1158): `docs` correct tools example commands in the docs.
+| PR | Area | Impact |
+| --- | --- | --- |
+| [#1172](https://github.com/openai/openai-agents-js/pull/1172) | `agents-core` runtime compatibility | Restored discriminated union tool schemas through a narrowed compatibility fix. |
+| [#1171](https://github.com/openai/openai-agents-js/pull/1171) | `agents-extensions` runtime compatibility | Preserved nested audio config for the bug reported in [#1163](https://github.com/openai/openai-agents-js/issues/1163). |
+| [#1170](https://github.com/openai/openai-agents-js/pull/1170) | `agents-realtime` validation | Failed fast on unsupported SIP VAD fields. |
+| [#1169](https://github.com/openai/openai-agents-js/pull/1169) | test reliability | Stabilized the leak detection harness. |
+| [#1166](https://github.com/openai/openai-agents-js/pull/1166) | contributor workflow | Disabled trufflehog auto-update in pre-commit while preserving the secret scan. |
+| [#1165](https://github.com/openai/openai-agents-js/pull/1165) | docs accuracy | Fixed the Next.js example README source path. |
+| [#1162](https://github.com/openai/openai-agents-js/pull/1162) | test coverage | Added AI SDK UI boundary coverage in `agents-extensions`. |
+| [#1160](https://github.com/openai/openai-agents-js/pull/1160) | docs/examples | Synced AI SDK docs and examples. |
+| [#1158](https://github.com/openai/openai-agents-js/pull/1158) | docs accuracy | Corrected tools example commands in the docs. |
 
-## Issue Triage and Technical Follow-up
-- [Issue #1163](https://github.com/openai/openai-agents-js/issues/1163) to [PR #1171](https://github.com/openai/openai-agents-js/pull/1171): turned a community bug report about silently ignored nested audio config into a targeted compatibility fix that was approved and merged upstream.
-- [PR #1166 follow-up comment](https://github.com/openai/openai-agents-js/pull/1166#issuecomment-4245169121): documented the local `trufflehog` version, binary path, updater failure mode, and why `--no-update` preserved the secret scan instead of disabling it.
-- [PR #1172 maintainer review](https://github.com/openai/openai-agents-js/pull/1172#pullrequestreview-4116689455) and [follow-up comment](https://github.com/openai/openai-agents-js/pull/1172#issuecomment-4258122568): reduced a broader compatibility idea to the smallest demonstrated fix, reran validation, and got the narrowed change merged.
-- [PR #1178 review-thread follow-up](https://github.com/openai/openai-agents-js/pull/1178): posted targeted code-level responses in review threads for retry-adjusted usage accounting while the PR remains under maintainer evaluation.
+## Active Runtime Validation Work
 
-## PR Reviews and Review-thread Follow-up
-- Public review participation currently visible:
-  - [Review thread 1 on #1178](https://github.com/openai/openai-agents-js/pull/1178#pullrequestreview-4129790723)
-  - [Review thread 2 on #1178](https://github.com/openai/openai-agents-js/pull/1178#pullrequestreview-4129790873)
-  - [Review comment 1 on #1178](https://github.com/openai/openai-agents-js/pull/1178#discussion_r3101178078)
-  - [Review comment 2 on #1178](https://github.com/openai/openai-agents-js/pull/1178#discussion_r3101178272)
-- Those review comments document why the usage snapshot replacement has to update the full retry-adjusted `requestUsageEntries` slice and preserve failed-attempt placeholders when streaming usage is recomputed.
-- Current boundary: the public review record here is still concentrated on follow-up inside my own upstream PR threads. Outbound review on other contributors' PRs is the next area I am making public and trackable.
+[#1178](https://github.com/openai/openai-agents-js/pull/1178) focuses on preserving streaming usage after `AbortSignal` cancellation. The public thread shows a review-driven validation loop:
 
-## Maintainer Acknowledgements
-- [`@seratch`](https://github.com/seratch) merged all `9` currently merged `openai/openai-agents-js` PRs listed on this page.
-- Explicit approval reviews from [`@seratch`](https://github.com/seratch) are publicly visible on [#1158](https://github.com/openai/openai-agents-js/pull/1158), [#1162](https://github.com/openai/openai-agents-js/pull/1162), [#1165](https://github.com/openai/openai-agents-js/pull/1165), [#1166](https://github.com/openai/openai-agents-js/pull/1166), [#1169](https://github.com/openai/openai-agents-js/pull/1169), [#1170](https://github.com/openai/openai-agents-js/pull/1170), [#1171](https://github.com/openai/openai-agents-js/pull/1171), and [#1172](https://github.com/openai/openai-agents-js/pull/1172).
-- Public maintainer direction that materially changed scope or clarified boundaries:
-  - [#1172](https://github.com/openai/openai-agents-js/pull/1172): requested a narrower fix before later approving the merged version.
-  - [#1164](https://github.com/openai/openai-agents-js/pull/1164): clarified design intent and closed a docs PR that did not match maintainer intent.
-  - [#1171 comment](https://github.com/openai/openai-agents-js/pull/1171#issuecomment-4268944640): clarified that labels and project operations stay with maintainers even when contributor technical follow-up is helpful.
-  - [#1178 comment](https://github.com/openai/openai-agents-js/pull/1178#issuecomment-4272253022): requested stronger validation before merge.
+| Date | Evidence | Contribution |
+| --- | --- | --- |
+| 2026-04-17 | [comment 1](https://github.com/openai/openai-agents-js/pull/1178#discussion_r3101178078), [comment 2](https://github.com/openai/openai-agents-js/pull/1178#discussion_r3101178272) | Updated retry-adjusted usage accounting so streaming usage preserves failed-attempt placeholders and aggregate totals. |
+| 2026-04-20 | [runtime probe summary](https://github.com/openai/openai-agents-js/pull/1178#issuecomment-4281953544), [live probe instructions](https://github.com/openai/openai-agents-js/pull/1178#issuecomment-4281961306), [review comment](https://github.com/openai/openai-agents-js/pull/1178#discussion_r3111911447) | Converted maintainer feedback into runtime-behavior-probe analysis and ready-to-run live validation instructions. |
+| 2026-04-21 | [review comment](https://github.com/openai/openai-agents-js/pull/1178#discussion_r3118579194) | Applied review feedback to simplify streaming guard logic without behavior changes. |
+| 2026-04-23 | [review comment](https://github.com/openai/openai-agents-js/pull/1178#discussion_r3131206028) | Identified and committed to fixing multi-entry usage detail replacement instead of only replacing the first detail entry. |
 
-## Current Open Upstream Work
-- [#1178](https://github.com/openai/openai-agents-js/pull/1178): `fix` preserve streaming usage after `AbortSignal` cancellation.
+Supporting logs:
 
-## Supporting Logs
-- [logs/triage-log.md](./logs/triage-log.md)
-- [logs/review-log.md](./logs/review-log.md)
-- [logs/maintainer-interactions.md](./logs/maintainer-interactions.md)
-- [logs/README.md](./logs/README.md)
+- [Review-thread validation log](./logs/review-log.md)
+- [Triage and root-cause log](./logs/triage-log.md)
+- [Maintainer feedback response log](./logs/maintainer-interactions.md)
+
+## Supporting Tooling: `agents-pr-tools`
+
+[agents-pr-tools](https://github.com/wsk-builds/agents-pr-tools) is a small zero-dependency CLI for generating reproducible GitHub PR reports. It supports multi-author reporting, `@me` auth resolution, state/date/area/label filters, file output, Markdown/table/JSON/CSV/release-notes formats, request retries, timeouts, and rate-limit-aware errors.
+
+Recent tool work:
+
+- [#4](https://github.com/wsk-builds/agents-pr-tools/pull/4): hardened GitHub API requests and CI with timeout/retry/rate-limit diagnostics.
+- [#3](https://github.com/wsk-builds/agents-pr-tools/pull/3): added label filters and auth fallback.
+- [#2](https://github.com/wsk-builds/agents-pr-tools/pull/2): added `@me`, file output, and CI.
+- [#1](https://github.com/wsk-builds/agents-pr-tools/pull/1): added reporting modes and publish preparation.
+
+## How Pro/Codex Would Increase Output
+
+I would use 6 months of OpenAI developer Pro access for public OpenAI ecosystem work with concrete outputs:
+
+| Phase | Focus | Public outputs |
+| --- | --- | --- |
+| Months 1-2 | Runtime regression coverage for streaming, retries, aborts, and usage accounting | Focused tests, minimized repros, and review-ready PRs in `openai/openai-agents-js`. |
+| Months 3-4 | Documentation and example drift audits across Agents SDK packages | Docs patches, example fixes, and reproducible audit reports. |
+| Months 5-6 | Contribution reporting and release-readiness evidence | Stronger `agents-pr-tools` reporting, release-note summaries, and maintainer-facing validation notes. |
+
+Pro/Codex is especially useful for this work because it supports larger-context code review, faster test-case synthesis, deep issue reproduction, and clearer maintainer handoff summaries.
+
+## Verification Links
+
+- [Merged PR search](https://github.com/openai/openai-agents-js/pulls?q=is%3Apr+author%3Awsk-builds+is%3Amerged)
+- [Active PR search](https://github.com/openai/openai-agents-js/pulls?q=is%3Apr+author%3Awsk-builds+is%3Aopen)
+- [All authored upstream PRs](https://github.com/openai/openai-agents-js/pulls?q=is%3Apr+author%3Awsk-builds)
+- [Runtime validation thread #1178](https://github.com/openai/openai-agents-js/pull/1178)
+- [Working fork](https://github.com/wsk-builds/openai-agents-js)
+- [Profile README](https://github.com/wsk-builds/wsk-builds)

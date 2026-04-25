@@ -1,11 +1,11 @@
-# Maintainer Signal Logging Guide
+# Evidence Logging Guide
 
-This directory tracks public evidence that looks more like maintenance work than a plain list of merged PRs. The goal is to make it easy for an outside reviewer to verify technical follow-up, review-thread participation, and interactions with upstream maintainers.
+This directory tracks public evidence that looks more like maintenance work than a plain list of merged PRs. The goal is to make it easy for an outside reviewer to verify technical follow-up, review-thread validation, and responses to upstream maintainer feedback.
 
 ## What belongs here
 - `triage-log.md`: issue reproduction, root-cause isolation, scope narrowing, validation notes, and public technical follow-up.
-- `review-log.md`: public PR reviews, review comments, and review-thread follow-up that can be verified from GitHub.
-- `maintainer-interactions.md`: public maintainer feedback that changed the shape of the work, closed a thread, requested a narrower fix, or clarified design intent.
+- `review-log.md`: public review comments and review-thread validation that can be verified from GitHub.
+- `maintainer-interactions.md`: public maintainer feedback that changed the shape of the work, raised the validation bar, requested a narrower fix, or clarified design intent.
 
 ## Entry rules
 - Only record public GitHub evidence. If it is not visible on GitHub, it does not belong in these logs.
