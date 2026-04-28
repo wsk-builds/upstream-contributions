@@ -4,12 +4,12 @@ This log records public threads where I performed reproduction, root-cause isola
 
 ## Current Entries
 
-### 2026-04-20 - Converted `#1178` feedback into runtime behavior probes
+### 2026-04-20 - Added runtime behavior probes for `#1178`
 
 - Thread: [PR #1178](https://github.com/openai/openai-agents-js/pull/1178), [runtime probe summary](https://github.com/openai/openai-agents-js/pull/1178#issuecomment-4281953544), [live probe instructions](https://github.com/openai/openai-agents-js/pull/1178#issuecomment-4281961306)
 - Type: runtime validation, live behavior probe design, streaming usage accounting.
 - What I did: compared `main` against the candidate branch with a runtime-behavior-probe workflow, documented the branch behavior, and prepared a ready-to-run live probe for completed, early-abort, mid-abort, and late-abort streaming scenarios.
-- Why this is high-signal: it turns maintainer uncertainty into a reproducible validation path with concrete pass/block/negative interpretations.
+- Why this is high-signal: it turns a subtle runtime behavior question into a reproducible validation path with concrete pass/block/negative interpretations.
 - Outcome: the PR thread now contains both local probe findings and live verification instructions maintainers can run with their own `OPENAI_API_KEY`.
 
 ### 2026-04-17 - Narrowed `#1172` to the smallest merged compatibility fix
@@ -26,14 +26,14 @@ This log records public threads where I performed reproduction, root-cause isola
 - Type: issue-linked fix, regression scoping, compatibility follow-up.
 - What I did: translated a user report about silently ignored nested audio config into a focused patch in `agents-extensions`.
 - Why this is high-signal: it converted a public bug report into a minimal upstream fix with clear scope and fast maintainer review.
-- Outcome: PR approved and merged on April 15, 2026, and the issue was closed.
+- Outcome: PR approved and merged on April 15, 2026.
 
 ### 2026-04-14 - Added concrete local reproduction details for `#1166`
 
 - Thread: [PR #1166](https://github.com/openai/openai-agents-js/pull/1166), [follow-up comment](https://github.com/openai/openai-agents-js/pull/1166#issuecomment-4245169121)
 - Type: environment reproduction, contributor-tooling validation.
-- What I did: documented the installed `trufflehog` version, binary path, exact updater failure mode, and why `--no-update` preserved the secret scan instead of disabling it.
-- Why this is high-signal: it turned a vague local failure into a reproducible contributor-tooling fix with enough detail to judge safety and scope.
+- What I did: documented the installed `trufflehog` version, binary path, updater behavior, and why `--no-update` preserved the secret scan.
+- Why this is high-signal: it turned a local toolchain issue into a reproducible contributor-workflow fix with enough detail to judge safety and scope.
 - Outcome: PR merged on April 15, 2026.
 
 ### 2026-04-17 to 2026-04-23 - Code-level follow-up on `#1178`

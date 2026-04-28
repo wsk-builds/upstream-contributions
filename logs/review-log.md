@@ -12,7 +12,7 @@ Area: `packages/agents-core`, streaming usage accounting, retries, abort handlin
 
 - Review event: [review 1](https://github.com/openai/openai-agents-js/pull/1178#pullrequestreview-4129790723), [review 2](https://github.com/openai/openai-agents-js/pull/1178#pullrequestreview-4129790873)
 - Review comments: [comment 1](https://github.com/openai/openai-agents-js/pull/1178#discussion_r3101178078), [comment 2](https://github.com/openai/openai-agents-js/pull/1178#discussion_r3101178272)
-- Follow-up: updated snapshot replacement so retry-adjusted `requestUsageEntries` preserve failed-attempt placeholders and aggregate request totals.
+- Follow-up: updated snapshot replacement so retry-adjusted `requestUsageEntries` preserve retry-attempt placeholders and aggregate request totals.
 - Why it matters: prevents streaming usage from under-counting request attempts after runner-managed retries.
 
 ### 2026-04-20 - Runtime probe and live validation path
