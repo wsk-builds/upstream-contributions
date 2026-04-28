@@ -1,36 +1,21 @@
 # One-Screen Summary
 
-I contribute public maintenance work to [openai/openai-agents-js](https://github.com/openai/openai-agents-js), with a focus on runtime correctness, streaming behavior, compatibility fixes, tests, docs, and reproducible validation.
+This is the shortest reviewer-facing snapshot for my OpenAI developer Pro / Codex for OSS application.
 
-## Current Evidence
+**Project importance.** [openai/openai-agents-js](https://github.com/openai/openai-agents-js) is OpenAI's official JavaScript/TypeScript Agents SDK for multi-agent workflows and voice agents. It is public developer infrastructure for OpenAI builders, with about `2.9k` stars and `713` forks as of April 28, 2026.
 
-- `9` merged upstream PRs to [openai/openai-agents-js](https://github.com/openai/openai-agents-js).
-- `15` authored upstream PRs total: `9` merged, `1` active, `5` closed after maintainer feedback or scope changes.
-- `5` submitted review events and `5` review comments on [#1178](https://github.com/openai/openai-agents-js/pull/1178), focused on streaming usage correctness after cancellation.
-- Supporting tool: [agents-pr-tools](https://github.com/wsk-builds/agents-pr-tools), a zero-dependency PR reporting CLI with `4` merged PRs.
-- Project scale: [openai/openai-agents-js](https://github.com/openai/openai-agents-js) has `2,833` stars and `708` forks as of April 25, 2026.
+**Maintenance role.** I contribute core upstream maintenance work focused on runtime compatibility, streaming correctness, test reliability, documentation accuracy, and contributor workflow fixes. My public record is `15` authored upstream PRs: `9` merged, `1` active, and `5` closed after maintainer feedback or scope changes.
 
-## Strongest Public Links
+**Merged PR evidence.** The `9` merged PRs include runtime fixes for `agents-core`, `agents-extensions`, and `agents-realtime`; test reliability fixes; documentation repairs; and contributor workflow hardening. The [v0.8.4 release notes](https://github.com/openai/openai-agents-js/releases/tag/v0.8.4) publicly list my merged runtime, docs, test, and workflow contributions, including [#1170](https://github.com/openai/openai-agents-js/pull/1170), [#1171](https://github.com/openai/openai-agents-js/pull/1171), [#1172](https://github.com/openai/openai-agents-js/pull/1172), [#1158](https://github.com/openai/openai-agents-js/pull/1158), [#1160](https://github.com/openai/openai-agents-js/pull/1160), [#1165](https://github.com/openai/openai-agents-js/pull/1165), [#1162](https://github.com/openai/openai-agents-js/pull/1162), [#1169](https://github.com/openai/openai-agents-js/pull/1169), and [#1166](https://github.com/openai/openai-agents-js/pull/1166).
 
-- Issue-to-fix flow: [#1163](https://github.com/openai/openai-agents-js/issues/1163) -> merged [#1171](https://github.com/openai/openai-agents-js/pull/1171).
-- Maintainer-directed scope narrowing: [#1172 review](https://github.com/openai/openai-agents-js/pull/1172#pullrequestreview-4116689455) -> merged [#1172](https://github.com/openai/openai-agents-js/pull/1172).
-- Runtime validation: [#1178](https://github.com/openai/openai-agents-js/pull/1178), [runtime probe summary](https://github.com/openai/openai-agents-js/pull/1178#issuecomment-4281953544), [live probe instructions](https://github.com/openai/openai-agents-js/pull/1178#issuecomment-4281961306).
-- Contributor workflow fix: [#1166 follow-up](https://github.com/openai/openai-agents-js/pull/1166#issuecomment-4245169121) -> merged [#1166](https://github.com/openai/openai-agents-js/pull/1166).
-- Merged upstream PR search: [GitHub search](https://github.com/openai/openai-agents-js/pulls?q=is%3Apr+author%3Awsk-builds+is%3Amerged).
+**Active runtime validation.** [#1178](https://github.com/openai/openai-agents-js/pull/1178) is an active runtime validation thread for preserving streaming usage after `AbortSignal` cancellation. The public thread includes `5` submitted review events and `5` review comments, plus a [runtime probe summary](https://github.com/openai/openai-agents-js/pull/1178#issuecomment-4281953544) and [live probe instructions](https://github.com/openai/openai-agents-js/pull/1178#issuecomment-4281961306).
 
-## What Pro/Codex Unlocks
-
-Six months of OpenAI developer Pro access would directly support:
-
-- larger-context review of Agents SDK runtime paths
-- faster issue reproduction and failing-test minimization
-- stronger regression coverage for streaming, retries, aborts, and usage accounting
-- deeper docs/examples drift audits
-- better contribution reporting through `agents-pr-tools`
+**Public outputs from Pro / API credits.** I would use 6 months of OpenAI developer Pro access for public OSS maintenance with three concrete outputs: `1` runtime regression PRs and minimized repros for streaming, retries, aborts, and usage accounting; `2` docs/example drift audits with public patches; `3` release-readiness and contribution reports through [agents-pr-tools](https://github.com/wsk-builds/agents-pr-tools) and maintainer-facing validation notes.
 
 ## Verification
 
 - Full evidence page: [README.md](./README.md)
+- Merged upstream PR search: [GitHub search](https://github.com/openai/openai-agents-js/pulls?q=is%3Apr+author%3Awsk-builds+is%3Amerged)
 - Review-thread validation log: [logs/review-log.md](./logs/review-log.md)
 - Triage and root-cause log: [logs/triage-log.md](./logs/triage-log.md)
 - Maintainer feedback response log: [logs/maintainer-interactions.md](./logs/maintainer-interactions.md)

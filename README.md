@@ -1,17 +1,20 @@
 # OpenAI Agents SDK Upstream Contribution Evidence
 
-This repository is a public evidence archive for my upstream maintenance work in [openai/openai-agents-js](https://github.com/openai/openai-agents-js). It is structured for fast review: the first screen gives the application snapshot, and the rest links each claim to public GitHub evidence.
+This repository is a public evidence archive for my upstream maintenance work in [openai/openai-agents-js](https://github.com/openai/openai-agents-js). It is structured for fast review: the first screen gives the OpenAI developer Pro / Codex for OSS application snapshot, and the rest links each claim to public GitHub evidence.
 
-For the shortest reviewer version, see [ONE-SCREEN-SUMMARY.md](./ONE-SCREEN-SUMMARY.md).
+## One-Screen Application Summary
 
-## Application Snapshot
+**Project importance.** [openai/openai-agents-js](https://github.com/openai/openai-agents-js) is OpenAI's official JavaScript/TypeScript Agents SDK for multi-agent workflows and voice agents. It is public developer infrastructure for OpenAI builders, with about `2.9k` stars and `713` forks as of April 28, 2026.
 
-- Focus project: [openai/openai-agents-js](https://github.com/openai/openai-agents-js), with `2,833` stars and `708` forks as of April 25, 2026.
-- Authored upstream PRs: `15` total, `9` merged, `1` active, `5` closed after maintainer feedback or scope changes.
-- Review-thread validation: `5` submitted review events and `5` review comments on [#1178](https://github.com/openai/openai-agents-js/pull/1178).
-- Main contribution areas: runtime compatibility, streaming correctness, test reliability, documentation accuracy, and contributor workflow maintenance.
-- Supporting tooling: [agents-pr-tools](https://github.com/wsk-builds/agents-pr-tools), a zero-dependency GitHub PR reporting CLI with `4` merged PRs.
-- Profile entry point: [wsk-builds/wsk-builds](https://github.com/wsk-builds/wsk-builds).
+**Maintenance role.** I contribute core upstream maintenance work focused on runtime compatibility, streaming correctness, test reliability, documentation accuracy, and contributor workflow fixes. My public record is `15` authored upstream PRs: `9` merged, `1` active, and `5` closed after maintainer feedback or scope changes.
+
+**Merged PR evidence.** The `9` merged PRs include runtime fixes for `agents-core`, `agents-extensions`, and `agents-realtime`; test reliability fixes; documentation repairs; and contributor workflow hardening. The [v0.8.4 release notes](https://github.com/openai/openai-agents-js/releases/tag/v0.8.4) publicly list my merged runtime, docs, test, and workflow contributions, including [#1170](https://github.com/openai/openai-agents-js/pull/1170), [#1171](https://github.com/openai/openai-agents-js/pull/1171), [#1172](https://github.com/openai/openai-agents-js/pull/1172), [#1158](https://github.com/openai/openai-agents-js/pull/1158), [#1160](https://github.com/openai/openai-agents-js/pull/1160), [#1165](https://github.com/openai/openai-agents-js/pull/1165), [#1162](https://github.com/openai/openai-agents-js/pull/1162), [#1169](https://github.com/openai/openai-agents-js/pull/1169), and [#1166](https://github.com/openai/openai-agents-js/pull/1166).
+
+**Active runtime validation.** [#1178](https://github.com/openai/openai-agents-js/pull/1178) is an active runtime validation thread for preserving streaming usage after `AbortSignal` cancellation. The public thread includes `5` submitted review events and `5` review comments, plus a [runtime probe summary](https://github.com/openai/openai-agents-js/pull/1178#issuecomment-4281953544) and [live probe instructions](https://github.com/openai/openai-agents-js/pull/1178#issuecomment-4281961306).
+
+**Public outputs from Pro / API credits.** I would use 6 months of OpenAI developer Pro access for public OSS maintenance with three concrete outputs: `1` runtime regression PRs and minimized repros for streaming, retries, aborts, and usage accounting; `2` docs/example drift audits with public patches; `3` release-readiness and contribution reports through [agents-pr-tools](https://github.com/wsk-builds/agents-pr-tools) and maintainer-facing validation notes.
+
+For a standalone reviewer page with the same snapshot, see [ONE-SCREEN-SUMMARY.md](./ONE-SCREEN-SUMMARY.md).
 
 ## High-Signal Evidence
 
