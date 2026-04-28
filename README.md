@@ -1,18 +1,22 @@
-# OpenAI Agents SDK Upstream Contribution Evidence
+# OpenAI Agents SDK Upstream Maintenance Evidence
 
-This repository is a public evidence archive for my upstream maintenance work in [openai/openai-agents-js](https://github.com/openai/openai-agents-js). It is optimized for OpenAI developer Pro / Codex for OSS review: the first screen gives the application snapshot, and the sections below link each claim to public GitHub evidence.
+This repository is a public, reviewer-friendly evidence archive for my upstream maintenance work in [openai/openai-agents-js](https://github.com/openai/openai-agents-js). It is optimized for Codex for Open Source review: the first screen gives the application snapshot, and the sections below link each claim to public GitHub evidence.
+
+## Application Fit
+
+This page collects public evidence for my upstream maintenance work on OpenAI's official JavaScript/TypeScript Agents SDK, [openai/openai-agents-js](https://github.com/openai/openai-agents-js). It links application claims directly to merged PRs, release notes, review threads, runtime validation notes, and reproducible reporting tooling.
 
 ## One-Screen Application Summary
 
-**Project importance.** [openai/openai-agents-js](https://github.com/openai/openai-agents-js) is OpenAI's official JavaScript/TypeScript Agents SDK for multi-agent workflows and voice agents. It is public developer infrastructure for OpenAI builders, with about `2.9k` stars and `713` forks as of April 28, 2026.
+**Project importance.** [openai/openai-agents-js](https://github.com/openai/openai-agents-js) is OpenAI's official JavaScript/TypeScript Agents SDK for multi-agent workflows and voice agents. It is public developer infrastructure for OpenAI builders, with about `2.9k` stars and `714` forks as of April 28, 2026.
 
-**Upstream maintenance record.** I contribute runtime, Realtime, docs, tests, and workflow maintenance to the SDK. My public record includes `9` merged upstream PRs, active runtime validation on [#1178](https://github.com/openai/openai-agents-js/pull/1178), and a supporting evidence/reporting tool in [agents-pr-tools](https://github.com/wsk-builds/agents-pr-tools).
+**Upstream maintenance record.** I contribute runtime, Realtime, docs, tests, and workflow maintenance to the SDK. My public record includes `9` merged upstream PRs, active runtime validation on [#1178](https://github.com/openai/openai-agents-js/pull/1178), and public contribution reporting through [agents-pr-tools](https://github.com/wsk-builds/agents-pr-tools).
 
 **Release-note evidence.** The [v0.8.4 release notes](https://github.com/openai/openai-agents-js/releases/tag/v0.8.4) publicly list my merged runtime, Realtime, documentation, test, and workflow contributions: [#1170](https://github.com/openai/openai-agents-js/pull/1170), [#1171](https://github.com/openai/openai-agents-js/pull/1171), [#1172](https://github.com/openai/openai-agents-js/pull/1172), [#1158](https://github.com/openai/openai-agents-js/pull/1158), [#1160](https://github.com/openai/openai-agents-js/pull/1160), [#1165](https://github.com/openai/openai-agents-js/pull/1165), [#1162](https://github.com/openai/openai-agents-js/pull/1162), [#1169](https://github.com/openai/openai-agents-js/pull/1169), and [#1166](https://github.com/openai/openai-agents-js/pull/1166).
 
 **Active runtime validation.** [#1178](https://github.com/openai/openai-agents-js/pull/1178) validates streaming usage after `AbortSignal` cancellation. The public thread includes review-thread follow-up, a [runtime probe summary](https://github.com/openai/openai-agents-js/pull/1178#issuecomment-4281953544), and [live probe instructions](https://github.com/openai/openai-agents-js/pull/1178#issuecomment-4281961306).
 
-**Public outputs from Pro / API credits.** I would use 6 months of OpenAI developer Pro access for public OSS maintenance with three concrete outputs: `1` runtime regression PRs and minimized repros for streaming, retries, aborts, and usage accounting; `2` docs/example drift audits with public patches; `3` release-readiness and contribution reports through [agents-pr-tools](https://github.com/wsk-builds/agents-pr-tools) and maintainer-facing validation notes.
+**Public outputs from Codex for Open Source.** I would use ChatGPT Pro and API credits for public OSS maintenance with three concrete outputs: `1` runtime regression PRs and minimized repros for streaming, retries, aborts, and usage accounting; `2` docs/example drift audits with public patches; `3` release-readiness and contribution reports through [agents-pr-tools](https://github.com/wsk-builds/agents-pr-tools) and maintainer-facing validation notes.
 
 For a standalone reviewer page with the same snapshot, see [ONE-SCREEN-SUMMARY.md](./ONE-SCREEN-SUMMARY.md).
 
@@ -67,9 +71,9 @@ Recent tool work:
 - [#2](https://github.com/wsk-builds/agents-pr-tools/pull/2): added `@me`, file output, and CI.
 - [#1](https://github.com/wsk-builds/agents-pr-tools/pull/1): added reporting modes and publish preparation.
 
-## How Pro/Codex Would Increase Output
+## How Codex for Open Source Would Increase Output
 
-I would use 6 months of OpenAI developer Pro access for public OpenAI ecosystem work with concrete outputs:
+I would use ChatGPT Pro and API credits for public OpenAI ecosystem work with concrete outputs:
 
 | Phase | Focus | Public outputs |
 | --- | --- | --- |
@@ -77,7 +81,7 @@ I would use 6 months of OpenAI developer Pro access for public OpenAI ecosystem 
 | Months 3-4 | Documentation and example drift audits across Agents SDK packages | Docs patches, example fixes, and reproducible audit reports. |
 | Months 5-6 | Contribution reporting and release-readiness evidence | Stronger `agents-pr-tools` reporting, release-note summaries, and maintainer-facing validation notes. |
 
-Pro/Codex is especially useful for this work because it supports larger-context code review, faster test-case synthesis, deep issue reproduction, and clearer maintainer handoff summaries.
+Codex for Open Source is especially useful for this work because it supports larger-context code review, faster test-case synthesis, deep issue reproduction, and clearer maintainer handoff summaries.
 
 ## Verification Links
 
